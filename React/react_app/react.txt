@@ -1,0 +1,63 @@
+Vanilla javascript: just javascript no third party element
+
+React:
+    Components help us write reusable, modular, and better organized code
+
+    nav, aside, game grid are build individual and then build them together 
+
+    2 way to create react app:
+        Vite
+        crate react app (CRA)
+
+    Vite
+    nithishasathishkumar@Nithishas-MacBook-Air-2 React % npm create vite@latest
+        Need to install the following packages:
+        create-vite@5.5.5
+        Ok to proceed? (y) y
+        ✔ Project name: … react_app
+        ✔ Select a framework: › React
+        ✔ Select a variant: › TypeScript
+
+    in the specific folder npm run dev to get the link for the local host "http://localhost:5173/"
+
+    tsx: for react Components
+    PascalCasing for function
+
+    //how to convert html to react
+    https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCwjAfCCmA2sHsAEB3BAnA1sA9OCQA&debug=false&forceAllTransforms=false&modules=false&shippedProposals=false&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.26.2&externalPlugins=&assumptions=%7B%7D
+
+    import Message from './Message'; //. means current folder
+
+    app - message = virtual DOM div - div
+
+    React is a js library for building user interfaces
+
+    react is library and anchor, vite is framework
+
+    different between them is library is a tool the provides specific functionality as for the framework is a set of tools and guidelines for building apps
+
+    bootstrap: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
+    //cmp + p = file name
+    //cmp + d = multiple cursor , esc multiple time to get 1 cursor
+    //select the item, go to commandpalette = wrap with abrreviation and add element you want to trap with 
+
+    react can not return more than 1 element
+        fix :
+             wrap with div
+             import fragment from react 
+             remove just use empty angle brackets to use a fragment(best way)
+
+    react does not have for loop
+    if its not HTML or react in return use {}
+    //const message = items.length === 0 ? <p>No item found</p> : null;
+
+    // const getMessage = () =>{
+    //   return items.length === 0 ? <p>No item found</p> : null;
+    // } add to the return {getMessage()}
+
+     {items.length === 0 && <p>No item found</p>} // if items.length === 0 then No item found will be printed
+     console.log(`Clicked ` + item, index)
+
+
+

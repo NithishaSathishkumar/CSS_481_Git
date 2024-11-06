@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeBackground(e){
+            const color = e.currentTarget.innerText;
+            document.body.style.background = color;
+        }
+    </script>
+
+    <style>
+        .base{
+            display: block;
+        }
+
+        button{
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .Blue{
+            background-color: blue;
+            color: white;
+        }
+
+        .Red{
+            background-color: Red;
+            color: white;
+        }
+
+        .Green{
+            background-color: green;
+            color: white;
+        }
+
+        .Yellow{
+            background-color: yellow;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="base">
+        <div>
+            <button class="Blue" onclick="changeBackground(event)">Blue</button>
+        </div>
+        <div>
+            <button class="Red" onclick="changeBackground(event)">Red</button>
+        </div>
+        <div>
+            <button class="Green" onclick="changeBackground(event)">Green</button>
+        </div>
+        <div>
+            <button class="Yellow" onclick="changeBackground(event)">Yellow</button>
+        </div>
+    </div>
+
+</body>
+</html>

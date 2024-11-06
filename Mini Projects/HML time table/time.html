@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+
+    <script>
+        let output = "<table border=1>";
+        //let size = localStorage.getItem("whatever");
+        
+        // if(!size){
+        //     size = prompt("Enter the size of multiplication table?");
+        //     localStorage.setItem("whatever", size);
+        // }
+
+        let size = sessionStorage.getItem("whatever");
+        
+        if(!size){
+            size = prompt("Enter the size of multiplication table?");
+            sessionStorage.setItem("whatever", size);
+        }
+
+        // Create header row
+        output += "<tr>"; 
+        output += "<th>X</th>"; // Empty corner cell
+
+        for (let x = 1; x <= size; x++) {
+            output += `<th>${x}</th>`;
+        }
+        output += "</tr>";  // Close header row
+
+        // Create table body
+        for (let i = 1; i <= size; i++) {
+            output += `<tr><th>${i}</th>`; // First column with row number
+            for (let j = 1; j <= size; j++) {
+                output += `<td>${i * j}</td>`;
+            }
+            output += `</tr>`;
+        }
+        output += '</table>';
+
+        // Write the output
+        document.write(output);
+    </script>
+</head>
+<body>
+</body>
+</html>
